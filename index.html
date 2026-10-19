@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fbf1ee">
+  <title>Happy First Monthsary, Rihanna</title>
+  <meta name="description" content="A first monthsary love story made for Rihanna.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Italiana&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <nav class="chapter-nav" id="chapter-nav" aria-label="Love story navigation" hidden>
+    <a class="monogram" href="#home" data-home aria-label="Back to the beginning">R<span>&#9825;</span></a>
+    <div class="chapter-links">
+      <a href="#home" data-home data-section="home"><span>01</span> Beginning</a>
+      <a href="#memories" data-section="memories"><span>02</span> Surprises</a>
+    </div>
+    <button class="sound-button" id="sound-button" aria-label="Play background music" aria-pressed="false">&#9835;</button>
+  </nav>
+
+  <main>
+    <section class="hero chapter" id="home">
+      <div class="hero-hearts" aria-hidden="true"><i>&#9825;</i><i>&#9825;</i><i>&#9825;</i><i>&#9825;</i></div>
+      <div class="hero-frame reveal">
+        <div class="corner corner-a"></div><div class="corner corner-b"></div>
+        <p class="hero-label">OUR FIRST MONTH TOGETHER</p>
+        <div class="outline-heart" aria-hidden="true">&#9825;</div>
+        <h1>Happy First Monthsary,<br><em>Rihanna.</em></h1>
+        <p class="hero-subtitle">One month with you, and I'm already grateful for so many little things.</p>
+        <button class="button button-dark hero-button" id="open-card">Open the Card <span>&#9825;</span></button>
+        <p class="scroll-note">A LITTLE LOVE STORY, WRITTEN BY US.</p>
+      </div>
+    </section>
+
+    <div class="experience" id="experience" hidden>
+    <section class="chapter surprises" id="memories">
+      <div class="section-shell">
+        <header class="section-title reveal">
+          <h2>SANA MA<br><em>APPRECIATE MO PO.</em></h2>
+        </header>
+
+        <div class="gift-grid" aria-label="Four surprise cards">
+          <button class="gift-card reveal" data-surprise="memories-content" data-label="Mga SS na Meron Ako Mwehehe">
+            <span class="card-number">01</span><span class="gift-icon">&#9825;</span>
+            <span class="card-kicker">A LITTLE SURPRISE FOR YOU</span>
+            <strong>Mga SS na<br><em>Meron Ako Mwehehe</em></strong>
+            <span class="card-line"></span><small>Please click to open &#9825;</small>
+          </button>
+          <button class="gift-card reveal" data-surprise="message-content" data-label="My Message to You, My Baby">
+            <span class="card-number">02</span><span class="gift-icon">&#9993;</span>
+            <span class="card-kicker">SEALED WITH ALL MY LOVE</span>
+            <strong>My Message to You<br><em>My Baby</em></strong>
+            <span class="card-line"></span><small>Please click to open &#9825;</small>
+          </button>
+          <button class="gift-card reveal" data-surprise="video-content" data-label="Our Video">
+            <span class="card-number">03</span><span class="gift-icon">&#9655;</span>
+            <span class="card-kicker">A MEMORY IN MOTION</span>
+            <strong>Baka duo gods to<br><em>HAHAHAHA</em></strong>
+            <span class="card-line"></span><small>Please click to open &#9825;</small>
+          </button>
+          <button class="gift-card reveal" data-surprise="date-content" data-label="Virtual Date Invitation">
+            <span class="card-number">04</span><span class="gift-icon">&#10022;</span>
+            <span class="card-kicker">ONE LAST QUESTION, BABY</span>
+            <strong>One More Little<br><em>Surprise</em></strong>
+            <span class="card-line"></span><small>Please click to open &#9825;</small>
+          </button>
+        </div>
+        <p class="gift-hint reveal">Open them in any order. Every gift is yours.</p>
+      </div>
+    </section>
+    </div>
+  </main>
+
+  <dialog class="surprise-dialog" id="surprise-dialog" aria-labelledby="prompt-title">
+    <div class="prompt-view" id="prompt-view">
+      <button class="modal-close" data-close aria-label="Close surprise">&times;</button>
+      <div class="pulse-heart" aria-hidden="true">&#9825;</div>
+      <p class="modal-kicker">JUST A TINY PAUSE...</p>
+      <h2 id="prompt-title">Wait, baby!</h2>
+      <p>Please click again to open your surprise...</p>
+      <button class="button button-glow" id="reveal-surprise">Open My Surprise &#128140;</button>
+    </div>
+    <div class="reveal-view" id="reveal-view" hidden>
+      <button class="modal-close" data-close aria-label="Close surprise">&times;</button>
+      <div class="reveal-content" id="reveal-content"></div>
+    </div>
+  </dialog>
+
+  <template id="memories-content">
+    <div class="memory-heading">
+      <div class="memory-ornament"><span></span><b>&#9825;</b><span></span></div>
+      <h2>Mwamwa <em>Baby</em></h2>
+      <p>Little pieces of us that I never want to forget.</p>
+    </div>
+    <div class="memory-gallery">
+      <button class="memory-photo focus-top" data-caption="MY PRETTY BABY"><img src="assets/efa1906f-6c54-41ca-8814-4073c14ea785.jpg" alt="A video call memory"><span>MY PRETTY BABY</span><i>View Memory &#9825;</i></button>
+      <button class="memory-photo" data-caption="BONAKID YARN"><img src="assets/cb5bf9ac-3ef1-4939-8803-dd63d7b1ca0a.jpg" alt="Our matching game characters"><span>BONAKID YARN</span><i>View Memory &#9825;</i></button>
+      <button class="memory-photo" data-caption="MAPPINGS NA MALUPET"><img src="assets/14d90cfb-4a6c-462a-9b74-da4cdff6e28a.jpg" alt="Our digital drawing"><span>MAPPINGS NA MALUPET</span><i>View Memory &#9825;</i></button>
+      <button class="memory-photo" data-caption="NUKE WITH CUTE"><img src="assets/879ca737-ec28-4d78-9085-f760972a9f83.jpg" alt="A game memory together"><span>NUKE WITH CUTE</span><i>View Memory &#9825;</i></button>
+      <button class="memory-photo" data-caption="TULOG NA TUTULOG ANG BABY"><img src="assets/9c7c28a0-9c6e-46e9-8324-11fb23715173.jpg" alt="Our late-night setup"><span>TULOG NA TUTULOG ANG BABY</span><i>View Memory &#9825;</i></button>
+      <button class="memory-photo focus-top" data-caption="TUTOTIAL DAW PANO MANDUROG"><img src="assets/870e12e1-f4db-4910-a78a-431c26ba211d.jpg" alt="A late-night video call"><span>TUTOTIAL DAW PANO MANDUROG</span><i>View Memory &#9825;</i></button>
+      <p class="scrapbook-note">Even the simplest moments feel special when they are ours.</p>
+      <button class="memory-photo" data-caption="BLACK NOIR?"><img src="assets/b1f1278a-5445-4ddc-a3ac-eef5e3f25c4e.jpg" alt="Our characters together"><span>BLACK NOIR?</span><i>View Memory &#9825;</i></button>
+      <button class="memory-photo" data-caption="JOMBI"><img src="assets/3038747b-956f-412e-9ce2-2c13fce19be9.jpg" alt="Another game memory"><span>JOMBI</span><i>View Memory &#9825;</i></button>
+      <button class="memory-photo" data-caption="DANCERIST."><img src="assets/5a14de52-e32c-4989-8ed6-56b7ecac7b17.jpg" alt="A favorite shared memory"><span>DANCERIST.</span><i>View Memory &#9825;</i></button>
+    </div>
+    <div class="gallery-ending"><span></span><p>Not every moment has to be perfect to be my favorite.</p><span></span></div>
+  </template>
+
+  <template id="message-content">
+    <div class="modal-heading"><p class="modal-kicker">GIFT NO. 02</p><h2>A Little <em>Message</em></h2></div>
+    <article class="surprise-letter">
+      <p class="letter-date">OCTOBER 20, 2026</p><h3>My dearest Rihanna,</h3>
+      <p><strong>Happy First Monthsary, my baby!</strong></p>
+      <p>I'm so lucky to have you in my life, baby. You make my days special in ways you probably don't even realize, and I'm so thankful for all the love, happiness, and comfort you bring me every day. Having you by my side is one of the best things that has ever happened to me.</p>
+      <p>I hope na kahit anong mangyari sa atin, kahit gaano pa tayo kalayo sa isa't isa, we will always choose each other and continue to fight for our love. I hope na one day, matupad natin lahat ng mga pangarap natin, not separately, but together. I want to see us grow, achieve our dreams, and celebrate every little success with each other. I want to be there for you through your happiest days and even during the times when things get difficult.</p>
+      <p>Thank you, baby, kasi palagi kang nandiyan para sa akin. Thank you for making me feel loved and for staying by my side, kahit minsan ang sungit mo sa akin HAHAHAHA. Even with our little tampuhan and misunderstandings, I hope we never get tired of understanding each other and choosing to stay.</p>
+      <p>This is only our first monthsary, but I hope it's just the beginning of a beautiful love story that we will continue to write together. I know hindi naman palaging magiging madali ang lahat, but I hope we always remember why we started and how much we mean to each other.</p>
+      <p>I love you always, my baby. Please take care of yourself palagi, ha? Even when I'm not beside you, I hope you always feel how much I love you. I'm so proud to have you, and I'm so happy that it's you I'm sharing this journey with.</p>
+      <p class="letter-ending"><strong>Happy first monthsary ulit, my baby! Here's to more monthsaries, more memories, more dreams to achieve together, and a love that continues to grow stronger every day. I love you so much, baby. Always and in all ways.</strong></p>
+      <p class="signature">Always yours, with all my love.</p>
+    </article>
+  </template>
+
+  <template id="video-content">
+    <div class="modal-heading"><h2>HAHAHAHAHAHHAHA</h2><p>Press play, baby. This little memory is all yours.</p></div>
+    <div class="surprise-video"><video controls playsinline preload="metadata"><source src="assets/49ed3130-e33a-4ed0-903a-6303807d93cc.mp4" type="video/mp4">Your browser does not support HTML video.</video></div>
+  </template>
+
+  <template id="date-content">
+    <section class="virtual-date" aria-labelledby="date-question">
+      <div class="date-question-view">
+        <p class="modal-kicker">FOR US, EVEN FROM MILES AWAY</p>
+        <div class="date-heart" aria-hidden="true">&#9825;</div>
+        <h2>One Last Question, <em>Baby...</em></h2>
+        <h3 id="date-question">Will you have a virtual date with me? &#10084;&#65039;</h3>
+        <p>Even if we're miles apart, I still want to make more memories with you. Just you and me, a call, and some quality time together.</p>
+        <div class="date-answer-buttons">
+          <button class="button date-yes" type="button">YES, BABY! &#10084;&#65039;</button>
+          <button class="button date-no" type="button">NO &#128584;</button>
+        </div>
+        <p class="no-reply" aria-live="polite"></p>
+      </div>
+
+      <div class="date-planner" hidden>
+        <div class="date-celebration" aria-live="polite">
+          <span aria-hidden="true">&#9825;</span>
+          <p class="modal-kicker">YOU JUST MADE ME VERY HAPPY</p>
+          <h2>IT'S A <em>DATE!</em></h2>
+          <p>Let's plan a little time that belongs only to us.</p>
+        </div>
+        <form class="date-form">
+          <fieldset>
+            <legend>What should we do together?</legend>
+            <label><input type="radio" name="activity" value="Video call" required><span>Video call</span></label>
+            <label><input type="radio" name="activity" value="CODM gaming session"><span>CODM gaming session</span></label>
+            <label><input type="radio" name="activity" value="Watch a movie together"><span>Watch a movie together</span></label>
+            <label><input type="radio" name="activity" value="Chill and talk"><span>Chill and talk</span></label>
+          </fieldset>
+          <div class="date-fields">
+            <label>Preferred date<input type="date" name="date" required></label>
+            <label>Preferred time<input type="time" name="time" required></label>
+          </div>
+          <button class="button button-dark date-confirm" type="submit">CONFIRM OUR VIRTUAL DATE &#9825;</button>
+        </form>
+        <div class="date-confirmation" hidden aria-live="polite"></div>
+        <p class="planner-note">Your choices stay on this page—they are not automatically sent.</p>
+      </div>
+    </section>
+  </template>
+
+  <audio id="music" loop preload="metadata"><source src="assets/vid.mp3" type="audio/mpeg"></audio>
+  <dialog id="lightbox" aria-labelledby="lightbox-caption">
+    <button id="close-lightbox" aria-label="Close photo">&times;</button>
+    <button class="lightbox-arrow previous" id="previous-photo" aria-label="View previous memory">&larr;</button>
+    <figure><img id="lightbox-image" alt=""><figcaption><p id="lightbox-caption"></p><small>A little piece of us, kept forever.</small></figcaption></figure>
+    <button class="lightbox-arrow next" id="next-photo" aria-label="View next memory">&rarr;</button>
+  </dialog>
+  <div class="magic-layer" id="magic-layer" aria-hidden="true"></div>
+  <footer id="site-footer" hidden><span>R &#9825;</span><p>Made with love for Rihanna &middot; Our first monthsary</p><a href="#home" data-home>Back to the beginning &uarr;</a></footer>
+  <script src="script.js"></script>
+</body></html>
